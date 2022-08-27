@@ -6,13 +6,11 @@ This project
 
 You can try it at https://recipeapp-noris.netlify.app/
 
-### `npm start`
+## Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In the app you can see popular recipes, vegetarian recipes, American, Italian and Chinese recipes. 
+you can also search for a particular food with the keyword.
+By clicking on the recipe you can see the ingredients, the preparation and finally a small summary on the plate.
 
 ### `npm test`
 
