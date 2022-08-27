@@ -22,12 +22,11 @@ For each page opened, the software makes a call to the Spoonacular API to obtain
 * Javascript ES6 in Jsx
 
 ## :books: Dependencies
-* [Get from _Lodash](https://lodash.com/docs/4.17.15#get)
-* [Axios](https://axios-http.com/)
-* [Style-loader](https://www.npmjs.com/package/style-loader)
-* [css-loader](https://www.npmjs.com/package/css-loader)
-* [gh-pages](https://www.npmjs.com/package/gh-pages)
-* [sass , optional](https://www.npmjs.com/package/sass)
+* [React Icons](https://www.npmjs.com/package/react-icons)
+* [React Splide](https://splidejs.com/)
+* [Styled Components](https://styled-components.com/)
+* [Framer Motion](https://www.npmjs.com/package/framer-motion)
+* [React , React Dom , React Router Dom](https://it.reactjs.org/)
 
 ## :e-mail: Contact Me
 Any questions? Send me an e-mail here: mattianoris23@gmail.com <br>
