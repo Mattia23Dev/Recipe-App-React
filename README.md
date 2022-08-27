@@ -4,6 +4,8 @@
 
 You can try it at [Recipe-App](https://recipeapp-noris.netlify.app/)
 
+<img src="" width="75%" height="70%">
+
 ## 🚀 Functionality
 
 In the app you can see popular recipes, vegetarian recipes, American, Italian and Chinese recipes, <br/>
