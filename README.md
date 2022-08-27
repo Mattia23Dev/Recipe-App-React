@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Recipe App by Spoonacular API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project 
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+You can try it at https://recipeapp-noris.netlify.app/
 
 ### `npm start`
 
