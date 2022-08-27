@@ -2,16 +2,18 @@
 
 ## Demo
 
-You can try it at [Recipe-App](https://recipeapp-noris.netlify.app/)
+You can try it at [Recipe-App](https://recipeapp-noris.netlify.app/)<br/><br/><br/>
 
-<img src="" width="75%" height="70%">
+<img src="https://github.com/Mattia23Dev/Recipe-App-React/blob/master/screen.png" width="75%" height="70%">
 
 ## 🚀 Functionality
 
 In the app you can see popular recipes, vegetarian recipes, American, Italian and Chinese recipes, <br/>
 you can also search for a particular food with the keyword.<br/>
 By clicking on the recipe you can see the ingredients, the preparation and finally a small summary on the plate.<br/>
-For each page opened, the software makes a call to the Spoonacular API to obtain recipes of a certain type.
+For each page opened, the software makes a call to the Spoonacular API to obtain recipes of a certain type.<br/><br/><br/>
+
+<img src="https://github.com/Mattia23Dev/Recipe-App-React/blob/master/screen2.png" width="75%" height="70%">
 
 ## :computer: Languages
 * React , Jsx
