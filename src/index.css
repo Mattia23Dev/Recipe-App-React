@@ -116,9 +116,10 @@ a{
     text-align: center;
   }
   .div1-recipe > img{
-    width: 70% !important;
+    width: 95% !important;
     border-radius: 2rem;
     overflow-x: hidden !important;
+    margin: 0 0.6rem;
   }
   .div2-recipe{
     margin-left: 2rem !important;

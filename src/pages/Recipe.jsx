@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import {useParams} from 'react-router-dom';
-import { Fade , Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Recipe = () => {
 
@@ -30,9 +30,7 @@ const Recipe = () => {
     <DetailWrapper className='recipe-mobile'>
         <div className='div1-recipe'>
             <h2 key={details.id}>{details.title}</h2>
-            <Slide>
             <img src={details.image} alt="Details image" />
-            </Slide>
         </div>
         
         <Information className='div2-recipe'>
