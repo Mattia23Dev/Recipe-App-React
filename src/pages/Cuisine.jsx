@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion';
 import {Link, useParams} from 'react-router-dom';
 import {useState , useEffect} from 'react';
+import { Zoom } from "react-awesome-reveal";
 
 function Cuisine () {
     const [cuisine , setCuisine] = useState([]);
@@ -22,7 +23,7 @@ function Cuisine () {
     };
 
   return (
-        <Grid
+        <Grid className='cuisine'
         animate={{opacity: 1}}
         initial={{opacity: 0}}
         exit={{opacity: 0}}
@@ -30,12 +31,14 @@ function Cuisine () {
         >
             {cuisine.map ((item) => {
                 return (
+                    <Zoom>
                     <Card key={item.id}>
                       <Link to={'/recipe/'+item.id}> 
                         <img src={item.image} alt={item.title} />
                         <h4>{item.title}</h4>
                       </Link>   
                     </Card>
+                    </Zoom>
                 );
             })}
         </Grid>

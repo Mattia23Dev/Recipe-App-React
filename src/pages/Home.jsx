@@ -5,7 +5,7 @@ import {motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <motion.div
+    <div
         animate={{opacity: 1}}
         initial={{opacity: 0}}
         exit={{opacity: 0}}
@@ -13,7 +13,7 @@ const Home = () => {
     >
       <Veggie />
       <Popular />
-    </motion.div>
+    </div>
   )
 }
 
