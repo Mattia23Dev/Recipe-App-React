@@ -15,7 +15,7 @@ const Search = () => {
     
   return (
     <Bounce>
-    <FormStyle onSubmit={submitHandler} className='form'>
+    <form onSubmit={submitHandler} className='form'>
         <div>
             <FaSearch onClick={submitHandler}></FaSearch>
             <input 
@@ -25,36 +25,9 @@ const Search = () => {
             onSubmit={submitHandler}
             />
         </div>    
-    </FormStyle>
+    </form>
     </Bounce>
   )
 }
-
-const FormStyle = styled.div`
-    margin: 0rem 20rem;
-   div{
-    position: relative;
-    width: 100%;
-   }
-
-    input{
-        border:none;
-        font-size: 1.5rem;
-        color: white;
-        padding: 1rem 3rem;
-        border-radius: 1.5rem;
-        outline:none;
-        background: linear-gradient(35deg , #494949 , #313131);
-        width: 100%;
-    }
-    svg{
-        position: absolute;
-        top: 40%;
-        left: 2%;
-        transform: translate(100%; -50%);
-        color: white;
-        cursor: pointer;
-    }
-`;
 
 export default Search

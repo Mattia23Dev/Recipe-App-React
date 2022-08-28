@@ -46,6 +46,31 @@ a{
   transition: 400ms;
   transform: scale(1.1);
 }  
+.form{
+  margin: 0rem 20rem;
+}
+.form div{
+  position: relative;
+  width: 100%;
+ }
+
+.form input{
+      border:none;
+      font-size: 1.5rem;
+      color: white;
+      padding: 1rem 3rem;
+      border-radius: 1.5rem;
+      outline:none;
+      background: linear-gradient(35deg , #494949 , #313131);
+      width: 100%;
+  }
+  .form svg{
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      color: white;
+      cursor: pointer;
+  }
 @media screen and (max-width: 600px){
   body{
     overflow-x: hidden;
