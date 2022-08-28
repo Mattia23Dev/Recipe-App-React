@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
+import { Zoom } from "react-awesome-reveal";
 
 const Popular = () => {
     const [popular , setPopular] = useState([]);
@@ -15,7 +16,8 @@ const Popular = () => {
     const getPopular = async() => {
         const api = await fetch(
             `https://api.spoonacular.com/recipes/random?apiKey=966a63e5e0064e6bb6cf3a38f6dde556&number=9`
-            );
+            )
+            .catch((error) => console.log(error));
         const data = await api.json();
         setPopular(data.recipes); 
     }
@@ -26,7 +28,6 @@ const Popular = () => {
     <div>
                 <Wrapper>
                     <h3>Popular Recipes</h3>
-
                 <Splide options={{
                     perPage:4,
                     pagination: false,
@@ -37,12 +38,14 @@ const Popular = () => {
                     {popular.map((recipe) => {
                         return(
                             <SplideSlide key={recipe.id}>
+                            <Zoom>   
                             <Card className='popular-mobile'>
-                              <Link to={'/recipe/'+recipe.id}>
+                              <Link to={'/recipe/'+recipe.id} className='scale'>
                                 <p>{recipe.title}</p>
                                 <img src={recipe.image} alt={recipe.title} />
                               </Link> 
                             </Card>
+                            </Zoom>
                             </SplideSlide>
                         )
                     })}
@@ -79,7 +82,7 @@ const Card = styled.div`
         left:50%;
         bottom:20%;
         transform: translate(-50%, 0);
-        color: black;
+        color: white;
         text-align:center;
         font-weight: 800;
         justify-content: center;

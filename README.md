@@ -27,6 +27,7 @@ For each page opened, the software makes a call to the Spoonacular API to obtain
 * [Styled Components](https://styled-components.com/)
 * [Framer Motion](https://www.npmjs.com/package/framer-motion)
 * [React , React Dom , React Router Dom](https://it.reactjs.org/)
+* [React Awesome Reveal](https://thewebdev.info/2020/10/28/add-animation-with-the-react-awesome-reveal-library/)
 
 ## :e-mail: Contact Me
 Any questions? Send me an e-mail here: mattianoris23@gmail.com <br>

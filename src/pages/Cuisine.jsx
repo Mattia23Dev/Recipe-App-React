@@ -15,7 +15,8 @@ function Cuisine () {
     const getCuisine = async(name) => {
          const data = await fetch(
             `https://api.spoonacular.com/recipes/complexSearch?apiKey=966a63e5e0064e6bb6cf3a38f6dde556&cuisine=${name}`
-            );
+            )
+            .catch((error) => console.log(error));
          const recipes = await data.json();
          setCuisine(recipes.results);   
     };

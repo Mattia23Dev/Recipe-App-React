@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import {useParams} from 'react-router-dom';
+import { Fade , Slide } from "react-awesome-reveal";
 
 const Recipe = () => {
 
@@ -17,7 +18,8 @@ const Recipe = () => {
     const fetchDetails = async() => {
         const data = await fetch(`
         https://api.spoonacular.com/recipes/${params.name}/information?apiKey=966a63e5e0064e6bb6cf3a38f6dde556`
-        );
+        )
+        .catch((error) => console.log(error));
         const detailData = await data.json();
         setDetails(detailData);
     };
@@ -28,7 +30,9 @@ const Recipe = () => {
     <DetailWrapper className='recipe-mobile'>
         <div className='div1-recipe'>
             <h2 key={details.id}>{details.title}</h2>
+            <Slide>
             <img src={details.image} alt="Details image" />
+            </Slide>
         </div>
         
         <Information className='div2-recipe'>
@@ -41,19 +45,23 @@ const Recipe = () => {
 
             {activeButton === 'instructions' && (
             <div>
+                <Fade cascade>
                 <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
                 <h2>Preparation:</h2>
                 <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
+                </Fade>
              </div>
             )}
 
             {activeButton === 'ingredients' && (
-                <ul>
+            <ul>
+                <Fade cascade>
                 {details.extendedIngredients.map((ingredient) =>{
                     return(
                         <li key={ingredient.id}>{ingredient.original}</li>
                     )
                 })}
+                </Fade>
             </ul>
             )}
 

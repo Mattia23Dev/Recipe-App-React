@@ -33,12 +33,28 @@ a{
 .title > h3 {
   margin: 2rem 0;
 }
+.btn:hover{
+  background: linear-gradient( to right, #f27a2f , #ba1d32);
+}
+.div2-recipe > div:first-of-type:hover,
+  .div2-recipe > div:nth-child(2):hover {
+    background: linear-gradient( to right, #919191 , #5f4c48);
+  }
+.scale:hover img, 
+.scale:hover img,
+.searched img:hover{
+  transition: 400ms;
+  transform: scale(1.1);
+}  
 @media screen and (max-width: 600px){
+  body{
+    overflow-x: hidden;
+  }
   .title{
     text-align: center;
     font-size: 1rem;
   }
-  .form-mobile{
+  .form{
     width: 60%;
     margin: 0 auto;
     position: relative;

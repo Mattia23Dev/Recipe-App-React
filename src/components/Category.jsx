@@ -3,24 +3,31 @@ import {FaPizzaSlice , FaHamburger} from 'react-icons/fa';
 import {GiNoodles , GiChopsticks} from 'react-icons/gi';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
+import { JackInTheBox} from "react-awesome-reveal";
 
 
 const Category = () => {
   return (
     <div>
     <List>
-        <SLink to={'/cuisine/Italian'}>
+        <JackInTheBox>
+        <SLink to={'/cuisine/Italian'} className='btn'>
             <FaPizzaSlice />
             <h4>Italian</h4>
         </SLink>
-        <SLink to={'/cuisine/American'}>
+        </JackInTheBox>
+        <JackInTheBox>
+        <SLink to={'/cuisine/American'} className='btn'>
             <FaHamburger />
             <h4>American</h4>
         </SLink>
-        <SLink to={'/cuisine/Chinese'}>
+        </JackInTheBox>
+        <JackInTheBox>
+        <SLink to={'/cuisine/Chinese'} className='btn'>
             <GiNoodles />
             <h4>Chinese</h4>
         </SLink>
+        </JackInTheBox>
     </List>
     </div>
   )

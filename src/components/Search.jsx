@@ -2,6 +2,7 @@ import {React, useState} from 'react';
 import styled from 'styled-components';
 import { FaSearch } from 'react-icons/fa';
 import {useNavigate} from 'react-router-dom';
+import { Bounce } from "react-awesome-reveal";
 
 const Search = () => {
   const [input , setInput] = useState('');
@@ -13,16 +14,19 @@ const Search = () => {
   };
     
   return (
-    <FormStyle onSubmit={submitHandler} className='form-mobile'>
+    <Bounce>
+    <FormStyle onSubmit={submitHandler} className='form'>
         <div>
             <FaSearch onClick={submitHandler}></FaSearch>
             <input 
             onChange={(e) => setInput(e.target.value)} 
             type="text" 
             value={input}
+            onSubmit={submitHandler}
             />
         </div>    
     </FormStyle>
+    </Bounce>
   )
 }
 
