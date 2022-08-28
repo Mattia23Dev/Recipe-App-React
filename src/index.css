@@ -42,7 +42,7 @@ a{
   }
 .scale:hover img, 
 .scale:hover img,
-.searched img:hover{
+.searched:hover img{
   transition: 400ms;
   transform: scale(1.1);
 }  
@@ -63,6 +63,9 @@ a{
       outline:none;
       background: linear-gradient(35deg , #494949 , #313131);
       width: 100%;
+  }
+.form input:focus{
+    border: 2px solid rgb(88, 30, 1);
   }
   .form svg{
       position: absolute;
