@@ -71,6 +71,10 @@ a{
       color: white;
       cursor: pointer;
   }
+
+  /*MOBILE*/
+
+
 @media screen and (max-width: 600px){
   body{
     overflow-x: hidden !important;
@@ -85,6 +89,9 @@ a{
     margin: 0 auto;
     position: relative;
   }
+  .form svg{
+    left: 6%;
+}
   .cuisine{
     overflow-x: hidden !important;
    }
@@ -92,15 +99,18 @@ a{
     font-size: 0.8rem;
     bottom: 10%;
   }
-  .popular-mobile {
+  .popular-mobile, 
+  .veggie-mobile {
     min-height: 30rem;
-    width: 140%;
+    width: 100%;
   }
   .popular-mobile > img {
     margin: 0 50px !important;
   }
-  .veggie-mobile{
-    width: 130%;
+  .popular-mobile p,
+  .veggie-mobile p{
+    bottom: -10% !important;
+    color: black !important;
   }
   .btn{
     width: 5.5rem !important;
@@ -116,7 +126,7 @@ a{
     text-align: center;
   }
   .div1-recipe > img{
-    width: 95% !important;
+    width: 93% !important;
     border-radius: 2rem;
     overflow-x: hidden !important;
     margin: 0 0.6rem;
@@ -129,5 +139,41 @@ a{
   .div2-recipe > div:first-of-type,
   .div2-recipe > div:nth-child(2) {
     padding: 0.5rem 1.6rem !important;
+  }
+}
+
+/*TABLET*/
+
+@media screen and (min-width:601px) and (max-width: 950px){
+  .form{
+    width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.form svg{
+  left: 4%;
+}
+  .popular-mobile p,
+  .veggie-mobile p{
+    bottom: 0% !important;
+    color: black !important;
+  }
+  .recipe-mobile{
+    flex-direction: column;
+    margin: 2rem 5rem !important;
+  }
+  .div1-recipe > h2{
+    text-align: center;
+  }
+  .div1-recipe > img{
+    width: 80% !important;
+    border-radius: 2rem;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+  }
+  .div2-recipe{
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    margin-top: 4rem !important;
   }
 }

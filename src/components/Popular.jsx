@@ -34,6 +34,11 @@ const Popular = () => {
                     arrows: false,
                     drag: 'free',
                     gap: '2rem',
+                    breakpoints: {
+                        640: {
+                            perPage: 1,
+                            drag: true,
+                        },}
                 }}>
                     {popular.map((recipe) => {
                         return(
@@ -80,9 +85,9 @@ const Card = styled.div`
         position:absolute;
         z-index:10;
         left:50%;
-        bottom:20%;
+        bottom:-10%;
         transform: translate(-50%, 0);
-        color: white;
+        color: black;
         text-align:center;
         font-weight: 800;
         justify-content: center;
